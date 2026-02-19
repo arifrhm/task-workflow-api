@@ -1,0 +1,21 @@
+{
+  "name": "task-workflow-api",
+  "version": "1.0.0",
+  "description": "Task Workflow API - Node.js Senior Backend Take-Home Test",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/**/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage test/**/*.test.js",
+    "migrate": "node src/scripts/migrate.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "better-sqlite3": "^11.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {}
+}
